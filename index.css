@@ -46,8 +46,8 @@ img {
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 100%;
+    gap: 10px;
+    width: 100%;
     font-family: 'Space Mono', monospace;
     color: #2b254e;
 }
