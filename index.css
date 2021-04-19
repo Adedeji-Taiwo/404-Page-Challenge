@@ -33,8 +33,9 @@ body {
 
 .main {
     display: flex;
-    justify-content: space-between;
+    gap:250px;
     flex-grow: 1;
+    width: 100%;
 }
 
 
