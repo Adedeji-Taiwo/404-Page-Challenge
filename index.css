@@ -40,14 +40,13 @@ body {
 
 
 img { 
-    max-width: 30rem;
+    max-width: 80%;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 35rem;
+    max-width: 50%;
     font-family: 'Space Mono', monospace;
     color: #2b254e;
 }
