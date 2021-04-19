@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>404-Not Found Page</title>
+        <meta charset = "utf-8"><!--Sets website character encoding-->
+        <meta name = "author" content = "Taiwo Adedeji Michael">
+        <meta name = "description" content = "Creating Error 404 Page">
+        <meta name = "keyword" content = "Error, 404, Not-Found, Page">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"><!--set viewport to make website look good on all devices-->
+        <meta http-equiv = "refresh" content = "60"><!--Refresh doc every 60seconds-->
+        <link rel = "icon"; href = "https://res.cloudinary.com/dhegyaino/image/upload/v1618184614/devchallenges.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://kit.fontawesome.com/edbeb334a3.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "index.css">
+    </head>
+    <body>
+        <div class = "container">
+            <p class = "header">404 not found</p>
+            <div class = "main">
+                <div class = "scarecrow"><img src = "https://res.cloudinary.com/dhegyaino/image/upload/v1618180660/Scarecrow_ljzrp3.png" alt = "scarecrow"></div>
+                <div class = "sidebar">
+                    <h1 class = "headline">I have bad news for you</h1>
+                    <p class = "info">The page you are looking for might be removed or is temporarily unavailable</p>
+                    <button><span><i class="fas fa-home"></i></span>Back to home</button>
+                </div>
+            </div>
+            <div class = "footer">created by <span>Dhegyaino</span>. devChallenges.io</div>
+        </div>
+        <script>     
+            function myFunction(screen) {
+                if (screen.matches) { // If media query matches
+                    var img = document.getElementsByTagName("img");
+                    var headline = document.getElementsByClassName("headline");
+                    var info = document.getElementsByClassName("info");
+                    var button = document.getElementsByTagName("button");
+                    var t1 = gsap.timeline();
+                    //t1.to(fade, {duration: 2, x: 100, opacity: 0.5})
+                    t1.fromTo(img, 3, {x:300, opacity:0.7}, {x: 0, opacity: 1, ease: "power1.out"});
+                    //t1.fromTo(fade, {width: 0, height: 0}, {duration: 5, width: 400, height: 400});
+                    t1.fromTo(headline, 1, {opacity: 0, y: -30}, {opacity: 1, y:0, ease: "power1.out"});
+                    t1.fromTo(info, 1, {opacity: 0, y: -30}, {opacity: 1, y:0, ease: "power1.out"});
+                    t1.fromTo(button, 1, {opacity: 0, y: 30}, {opacity: 1, y:0, ease: "power1.out"});
+                }
+            }
+
+            var x = window.matchMedia("(min-width: 925px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
+        </script>
+    </body>
+</html>
