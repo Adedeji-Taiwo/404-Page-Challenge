@@ -38,9 +38,12 @@ body {
     gap: 50px;
 }
 
-
+.scarecrow {
+    max-width: 80%
+}
+    
 img { 
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .sidebar {
