@@ -33,7 +33,7 @@ body {
 
 .main {
     display: flex;
-    gap:250px;
+    gap:100px;
     flex-grow: 1;
     width: 100%;
 }
