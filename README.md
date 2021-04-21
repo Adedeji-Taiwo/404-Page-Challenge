@@ -40,7 +40,7 @@
 ![screenshot](https://github.com/Adedeji-Taiwo/404-Page-Challenge/blob/main/404-not-found-Mobile-View.Screenshot.png)
 
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+<!--Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:-->
 
 - Live link: https://error-404-page.netlify.app/
 - An intersting challenge with mobile responsiveness at it's core.
