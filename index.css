@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     gap:100px;
-    /*flex-grow: 1;*/        /*flex grow not necessarily needed as it was replaced by space-between to keep footer at the bottom*/
+    flex-grow: 1;
     width: 90%;
 }
 
