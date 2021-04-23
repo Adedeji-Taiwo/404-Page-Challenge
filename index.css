@@ -163,6 +163,7 @@ button span {
     font-size: 14px; 
     color: #bdbdbd;
     outline: none;
+    align-self: center;
 }
 
 span {
